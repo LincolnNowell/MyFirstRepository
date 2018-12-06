@@ -1,4 +1,4 @@
-# MyFirstRepositore
+# MyFirstRepository
 
 My Name is Lincoln Nowell
 
