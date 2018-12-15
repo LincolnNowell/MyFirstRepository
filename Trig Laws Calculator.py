@@ -48,23 +48,10 @@ def data(a, b, c, angle_a, angle_b, angle_c):
         amb_sin_b2(b, c, angle_c)
     elif a > 0 and b == 0 and c > 0 and angle_a > 0 and angle_b == 0 and angle_c == 0:
         amb_sin_c2(c, a, angle_a)
-    elif angle_a and angle_b:
-        angles(angle_a, angle_b, angle_c)
     else:
         print("Uh oh!\nLets start over.")
         user()
 
-
-def angles(angle_a, angle_b, angle_c):
-    x = list()
-    y = []
-    x.append(angle_a)
-    x.append(angle_b)
-    x.append(angle_c)
-    for i in x:
-        if i < 0:
-            y.append(i)
-            print(y)
 
 
 def degree_a(a, b, c):
