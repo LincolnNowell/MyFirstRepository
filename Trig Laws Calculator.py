@@ -51,7 +51,7 @@ def data(a, b, c, angle_a, angle_b, angle_c):
     elif angle_a and angle_b:
         angles(angle_a, angle_b, angle_c)
     else:
-        print("We got problems, and your going to solve em. \nLets start over")
+        print("Uh oh!\nLets start over.")
         user()
 
 
