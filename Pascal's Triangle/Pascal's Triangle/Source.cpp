@@ -12,6 +12,7 @@ int reduce(int);
 
 int main()
 {
+	fibonacci_sequence();
 	pascal_triangle();
 }
 
@@ -50,6 +51,7 @@ void fibonacci_sequence()
 
 	int next_num;
 	int start = 0;
+	std::cout << "1\n";
 
 
 
