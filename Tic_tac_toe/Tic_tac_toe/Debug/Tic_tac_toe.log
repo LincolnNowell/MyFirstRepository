@@ -1,0 +1,8 @@
+﻿  Source.cpp
+c:\users\linco\onedrive\desktop\visual studio projects\c++ projects\tic_tac_toe\tic_tac_toe\source.cpp(378): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=std::chrono::system_clock::rep
+          ]
+c:\users\linco\onedrive\desktop\visual studio projects\c++ projects\tic_tac_toe\tic_tac_toe\source.cpp(257): warning C4715: 'win': not all control paths return a value
+  Tic_tac_toe.vcxproj -> C:\Users\linco\OneDrive\Desktop\Visual Studio Projects\C++ Projects\Tic_tac_toe\Debug\Tic_tac_toe.exe
