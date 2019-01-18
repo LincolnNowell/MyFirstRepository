@@ -73,8 +73,8 @@ void tic_tac_toe()
 	Player player_1, player_2;
 
 	char board[3][3] = { '*','*', '*',
-						'*', '*', '*',
-						'*', '*', '*' };
+			     '*', '*', '*',
+			     '*', '*', '*' };
 
 	while (is_tie != true)
 	{
@@ -278,8 +278,8 @@ void tic_tac_toe_with_computer()
 	Player player_1, player_2;
 
 	char board[3][3] = { '*','*', '*',
-						'*', '*', '*',
-						'*', '*', '*' };
+			     '*', '*', '*',
+			     '*', '*', '*' };
 
 	while (is_tie != true)
 	{
@@ -395,8 +395,8 @@ void ai_face_off()
 	Player player_1, player_2;
 
 	char board[3][3] = { '*','*', '*',
-						'*', '*', '*',
-						'*', '*', '*' };
+			     '*', '*', '*',
+			     '*', '*', '*' };
 
 	while (is_tie != true)
 	{
