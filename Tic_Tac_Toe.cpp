@@ -42,8 +42,8 @@ int main()
 			ai_face_off();
 			break;
 
-	default:
-		break;
+		default:
+			break;
 	}
 }
 
