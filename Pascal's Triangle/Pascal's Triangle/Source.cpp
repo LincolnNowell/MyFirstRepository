@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <Windows.h>
-#include <conio.h>
+
 
 using namespace std;
 void menu();
@@ -12,8 +11,7 @@ int reduce(int);
 
 int main()
 {
-	fibonacci_sequence();
-	pascal_triangle();
+	menu();
 }
 
 int reduce(int n)
@@ -32,6 +30,7 @@ void menu()
 	int choice;
 
 	std::cout << "1. Fibonacci Sequance\n";
+	std::cout << "2. Pascal's Triangle\n";
 
 	std::cout << "Enter the number of the choice you want.\n";
 	std::cin >> choice;
@@ -40,13 +39,34 @@ void menu()
 	{
 	case 1:
 		fibonacci_sequence();
+		cin.ignore();
+		cin.get();
 		break;
+
+	case 2:
+		pascal_triangle();
+		cin.ignore();
+		cin.get();
+		break;
+
 	default:
 		break;
 	}
 }
+
 void fibonacci_sequence()
 {
+	int num;
+
+	std::cout << "How many numbers would you like to be printed?\n";
+	std::cin >> num;
+	while (num < 0 or cin.fail() == true)
+	{
+		std::cout << "Please enter a positive number.\n";
+		std::cin.clear();
+		std::cin >> num;
+	}
+
 	std::vector <int> sequance = { 0,1 };
 
 	int next_num;
@@ -55,13 +75,13 @@ void fibonacci_sequence()
 
 
 
-	while (true)
+	while (num != 1)
 	{
 		next_num = sequance[start] + sequance[start + 1];
 		std::cout << next_num << std::endl;
 		sequance.push_back(next_num);
-		Sleep(500);
 		start++;
+		num--;
 
 	}
 }
@@ -69,6 +89,7 @@ void fibonacci_sequence()
 
 void pascal_triangle()
 {
+
 	vector <int> tri;
 	vector <int> tri2 = { 1,1 };
 
@@ -122,7 +143,6 @@ void pascal_triangle()
 		next_size++;
 	}
 
-	cin.get();
 }
 
 
