@@ -4,6 +4,8 @@
 #include <typeinfo>
 #include <sstream>
 
+/*My version of the c# readline function in c++*/
+
 template<typename T>
 T getline_as(std::istream& s)
 {
