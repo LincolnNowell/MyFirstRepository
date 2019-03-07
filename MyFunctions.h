@@ -52,3 +52,15 @@ input readline(input &type)
 	type = user_input;
 	return type;
 }
+
+
+/*A typesafe version of printf using variadic templates*/
+void print() { ; }
+
+template<typename datatype, typename ...type>
+void print(const datatype& first,const type& ... args)
+{
+	std::cout << first << " ";
+
+	print(args...);
+}
